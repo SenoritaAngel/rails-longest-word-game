@@ -1,0 +1,15 @@
+<h1>New Game</h1>
+<% @letters.each do |letter| %>
+<<%= letter %>
+<% end %>
+<p>What is the longest word you can find</p>
+<!-- <form action="/http://localhost:3000/new" method="get">
+  <input type="text" name="letters">
+  <input type="submit" value="Play">
+</form> -->
+
+<form action="/http://localhost:3000/score" method="post">
+  <!-- hidden_field_tag :letters, form_letter -->
+  <input type="text" name="letters">
+  <input type="submit" value="Play">
+</form>
