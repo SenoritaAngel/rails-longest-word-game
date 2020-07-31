@@ -6,6 +6,10 @@ class GamesController < ApplicationController
   end
 
   def score
+    # verifier que les lettres du mot sont bien dans @letters
+    world.each do |letter|
+    # verifier que le mot est anglais
+    # donner un score
   end
 end
 
